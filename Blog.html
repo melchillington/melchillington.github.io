@@ -2,6 +2,7 @@
 <html>
         <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
         <link href="favicon.ico" rel="icon" type="image/x-icon"/>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126110563-1"></script>
@@ -12,250 +13,169 @@
 
   gtag('config', 'UA-126110563-1');
 </script>
-
-
-</head>
-
-
-
-
-<style>
-
-body{
-    background-color:white;
-}
-
-
-
-    
-div.gallery {
-    border: 1px solid #ccc;
-    margin-bottom: 25px;
-  
-}
-
-div.gallery:hover {
-    border: 1px solid #777;
-}
-
-div.gallery img {
-    width: 100%;
-    height: auto;
-}
-
-div.desc {
-    padding: 15px;
-    text-align: center;
-    height: 265px;
-
-}
-
-* {
-    box-sizing: border-box;
-}
-
-.responsive {
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%;
-}
-
-@media only screen and (max-width: 700px) {
-    .responsive {
-        width: 49.99999%;
-        margin: 6px 0;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .responsive {
-        width: 100%;
-    }
-}
-
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-#navbar ul { 
-	margin: 0; 
-	padding: 5px; 
-	list-style-type: none; 
-	text-align: center; 
-	background-color: #000; 
-	} 
- 
-#navbar ul li {  
-	display: inline; 
-	} 
- 
-#navbar ul li a { 
-	text-decoration: none; 
-	padding: .2em 1em; 
-	color: #fff; 
-	background-color: #000; 
-	} 
- 
-#navbar ul li a:hover { 
-	color: #000; 
-	background-color: #fff; 
-	} 
-</style>
-
-
-<body>
-        <div id="navbar"> 
-                <ul> 
-                  <li><a href="index.html">Home</a></li> 
-                  <li><a href="About.html">About</a></li> 
-                 
-                  <li><a href="Resume.html">Resume</a></li> 
-                 
-                </ul> 
-              </div> 
-<h2><center>Projects</center></h2>
-<h4><center>(Side projects, assignments, articles, & links to my source code coming soon)</center></h4>
-
-<div class="responsive">
-  <div class="gallery">
-    
-      <img src="IMG_0230.png"  width="600" height="400">
-    
-    <div class="desc">Arduino uno distance radar. When an object is close to the sensor, the 
-        buzzer will go off and the LED's will begin to flash with respect to how close the 
-        object is. For example, the closer the object is, the buzzer will be louder and the red LEDs will 
-        light up. When the object gets further and further away, the sound gets softer & the LEDs go
-        towards the green, indicating the object isn't close. Notice I had to use blue LEDs
-        in place of yellow ones because I didn't have them on hand at the time.
-         <br><br><br><br>The parts I used were: Arduino uno, 6 LEDs, resistors, jumper wires, piezo speaker & HC-SR04 ultrasonic distance sensor<br>
-         (12/17)</div>
-  </div>
-</div>
-
-
-<div class="responsive">
-  <div class="gallery">
-
-      <img src="IMG_0983.jpg"  width="600" height="400">
-    
-    <div class="desc">This was my final project for my CS 298 Embedded Systems course. It was by far
-        my favorite class & project I have made to date. I chose to do my project based on the best show --"The Office".
-        I presented 10 questions on the LCD screen that the user could answer. The user had two push buttons, one for true, the other for false.
-        If the user got the right answer to a question, the green LED would flash & their score would increment by 1.
-         If they got it wrong, the red LED would flash & their score stayed the same. 
-         At the end of the game, the user would be presented with their final score, a max of 10 pts.<br><br>The parts I used were: Arduino nano, jumper wires, 
-         potentiometer resistors, LEDs, and LCD screen. <br>12/17
-
-    </div>
-  </div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-
-      <img src="IMG_ss1150.png" width="600" height="400">
-    
-    <div class="desc">A continuation of my distance project, with the addition of an LCD.
-        I took out the flashing lights and buzzer and added a visual representaiton of the distance between an object
-        (my hand), and the sensor. <br><br><br><br><br><br><br><br>The parts I used were: Arduino Uno, jumper wires, HC-SR04 ultrasonic distance sensor, LCD, and resistors. <br>3/18 
-    </div>
-  </div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-
-      <img src="hh.png"  width="600" height="400">
-    
-    <div class="desc">Another one of my top favorites. This was supposed to be a smart mirror, however I couldn't
-        find a two-way mirror anywhere. It is powered by a Raspberry Pi 3 Model B. I used an old janky monitor I had laying
-        around and took it apart, the only thing it is missing is the mirror.<br><br><br><br><br><br><br>The parts I used were: old monitor, VGA-HDMI dongle, RPI3 model B. rip two way mirror :( <br>7/18 
-    </div>
-  </div>
-</div>
-<!-- <div class="responsive">
-    <div class="gallery">
-  
-        <img src="smoked.jpg" width="600" height="400">
-      
-      <div class="desc">Arduino smoke detector. Simple smoke detector, buzzes when detects smoke signal.<br><br>The parts I used were: Arduino uno, jumper wires,
-        piezo speaker, one resistor, & a flame sensor.<br>8/18
-      </div>
-    </div>
-  </div> -->
-<div class="responsive">
-    <div class="gallery">
-  
-        <img src="smartdoor.jpeg"  width="600" height="400">
-      
-      <div class="desc">This is my attempt at making a Bluetooth Smart door. I cut apart a shoebox to make a door and taped a latch to it. 
-          A basic Android app made with MIT app inventor 2 is used to control the Servo motor that is connected to the latch via paperclip.<br><br><br><br><br><br><br><br>The parts I used were: Arduino uno, jumper wires, 
-          HC-05 Bluetooth module, and a Servo motor. <br>9/18
- 
-      </div>
-    </div>
-  </div>
-  <div class="responsive">
-    <div class="gallery">
-  
-        <img src="IMG_3055.jpeg"  width="600" height="400">
-      
-      <div class="desc">Super fun photoresistor project. A photoresistor is a light-controlled variable resistor. The resistance of a photoresistor decreases with 
-          increasing incident light intensity. I used 3 photoresistors to power on and off 3 LEDs. When you wave your hand over any of the three resistors, 
-          it causes the corrisponding light to power on, and when your hand isn't there they will power off. I found this project to be really fun, especially when
-          I found out turning off my nearby lamp also made them turn on. <br><br><br> <br>The parts I used were: Arduino Uno,  3 LEDs, 3 10k Ohm resistors for the LEDs, 
-          3 LDR photoresistors, and jumper wires<br>10/18
- 
-      </div>
-    </div>
-  </div>
- <!-- <div class="responsive">
-        <div class="gallery">
-      
-            
-            <video width="520" height="440" controls>
-                <source src="IMG_2639 (1).MOV" type="video/mp4">
-                <source src="movie.ogg" type="video/ogg">
-                Your browser does not support the video tag.
-              </video> 
-         
-     
-          </div> 
+<div class="container">
+    <div class="grid">
+        <div class="cell">
+            <img src="IMG_3055.jpeg" class="responsive-image" style height="490px;">
+            <p>Super fun photoresistor project. A photoresistor is a light-controlled variable resistor. The
+                resistance of a photoresistor decreases with increasing incident light intensity.
+                I used 3 photoresistors to power on and off 3 LEDs. When you wave your hand over any of the three
+                resistors, it causes the corrisponding light to power on, and when your hand isn't there they will
+                power off. I found this project to be really fun, especially when I found out turning off my nearby
+                lamp also made them turn on.<br><br><strong>The parts I used were:</strong>
+                Uno, 3 LEDs, 3 10k Ohm resistors for the LEDs, 3 LDR photoresistors, and jumper wires
+                <br>10/18
+            </p>
         </div>
-      </div> 
-       <div class="responsive">
-        <div class="gallery">
-      
-            <video width="520" height="440" controls>
-                <source src="IMG_2641.MOV" type="video/mp4">
-                <source src="movie.ogg" type="video/ogg">
-                Your browser does not support the video tag.
-              </video>
-        
-          </div> 
-         </div>
-      </div> -->
 
- 
-<div class="clearfix"></div>
 
-<div style="padding:1px;">
-  <h4>I also do (mediocre <i><i class="em em-dizzy_face"></i></i>) web dev on the side:</h4>
-  <p><a href="http://www.marianne-wilsons-complete-catering.com/">http://www.marianne-wilsons-complete-catering.com/</a></p>
-     <p> 
-  </p>
-  <p><a href="https://thehairlabsalon.com/">https://thehairlabsalon.com/</a></p>
+        <div class="cell">
+            <video class="responsive-image" width="367.98px" height="490px" controls>
+                <source src="IMG_3052.mov">
+                Your browser doesn't support the video tag.
+            </video>
+            <p>
+                Photoresistor video
+            </p>
+        </div>
+
+
+        <div class="cell">
+            <img src="IMG_2636.jpg" class="responsive-image">
+            <p>This is my attempt at making a Bluetooth Smart door. I cut apart a shoebox to make a door
+                and taped
+                a latch to it.
+                A basic Android app made with MIT app inventor 2 is used to control the Servo motor that is
+                connected to the latch via paperclip.<br><br><strong>The parts I used were:</strong>
+                Arduino uno, jumper wires, HC-05 Bluetooth module, and a Servo motor.
+                <br>9/18
+            </p>
+        </div>
+
+
+        <div class="cell">
+            <video class="responsive-image" width="367.98px" height="490px" controls>
+                <source src="IMG_2639 (1).MOV">
+                Your browser doesn't support the video tag.
+            </video>
+            <p>
+                Bluetooth door video
+            </p>
+        </div>
+
+
+        <div class="cell">
+            <video class="responsive-image" width="367.98px" height="490px" controls>
+                <source src="IMG_2641.MOV">
+                Your browser doesn't support the video tag.
+            </video>
+            <p>
+                Bluetooth door video
+            </p>
+        </div>
+
+
+        <div class="cell">
+            <img src="smoked.jpg" class="responsive-image" style height="490px;" style width="367.98px;">
+            <p>Not too much to explain for this project, just a simple Arduino smoke detector. It buzzes
+                when the
+                flame sensor
+                detects a smoke signal.<br><br><br><br><br><strong>The parts I used were:</strong> Arduino
+                uno,
+                jumper wires,
+                piezo speaker, one resistor, & a flame sensor. <br>8/18
+            </p>
+        </div>
+
+
+        <div class="cell">
+            <video class="responsive-image" width="367.98px" height="490px" controls>
+                <source src="IMG_2205.MOV">
+                Your browser doesn't support the video tag.
+            </video>
+            <p>
+                Smoke detector video
+            </p>
+        </div>
+
+
+        <div class="cell">
+            <img src="IMG_1660.jpg" class="responsive-image">
+            <p>Another one of my top favorites. This was supposed to be a smart mirror, however I couldn't
+                find a
+                two-way mirror anywhere. It is powered by a Raspberry Pi 3 Model B. I used an old janky
+                monitor
+                I had laying around and took it apart, the only thing it is missing is the mirror.<br><br><strong>The
+                    parts I used were:</strong>
+                old monitor, VGA-HDMI dongle, RPI3 model B. rip two way mirror :(
+                <br>7/18
+
+            </p>
+        </div>
+
+
+        <div class="cell">
+            <img src="IMG_1150.jpg" class="responsive-image">
+            <p>A continuation of my distance project, with the addition of an LCD. I took out the flashing
+                lights
+                and buzzer and
+                added a visual representaiton of the distance between an object (my hand), and the sensor.
+                <br><br><strong>The
+                    parts I used were:</strong>
+                Arduino Uno, jumper wires, HC-SR04 ultrasonic distance sensor, LCD, and resistors. <br>3/18
+            </p>
+        </div>
+
+        <div class="cell">
+            <img src="IMG_0230.png" class="responsive-image" style height="490px ">
+            <p>Arduino uno distance radar. When an object is close to the sensor, the buzzer will go off
+                and the
+                LED's will begin to flash with respect to how close the object is. For example, the closer
+                the
+                object is, the buzzer will be louder and the red LEDs will light up. When the object gets
+                further
+                and further away, the sound gets softer & the LEDs go towards the green, indicating the
+                object
+                isn't close. Notice I had to use blue LEDs in place of yellow ones because I didn't have
+                them on
+                hand at the time. <br><br><strong>The parts I used were:</strong>
+                Arduino uno, 6 LEDs, resistors, jumper wires, piezo speaker & HC-SR04 ultrasonic distance
+                sensor
+
+                <br>12/17
+            </p>
+        </div>
+
+
+        <div class="cell">
+            <img src="IMG_0983.jpg" class="responsive-image" style height="490px;">
+            <p>This was my final project for my CS 298 Embedded Systems course. It was by far my favorite
+                class &
+                project I have made to date. I chose to do my project based on the best show --"The
+                Office". I
+                presented 10 questions on the LCD screen that the user could answer. The user had two push
+                buttons,
+                one for true, the other for false. If the user got the right answer to a question, the
+                green LED
+                would flash & their score would increment by 1. If they got it wrong, the red LED would
+                flash &
+                their score stayed the same.
+                At the end of the game, the user would be presented with their final score, a max of 10
+                pts. <br><br><strong>The
+                    parts I used were:</strong>
+                Arduino nano, jumper wires, potentiometer resistors, LEDs, and LCD screen.
+                <br>12/17</p>
+        </div>
+    </div>
+</div>
+
+
 <h4>Read these articles!!!!</h4>
 <ul>
     <li><a href = "https://hackernoon.com/dating-a-programmer-d302693d10f5"target="_blank" >Dating a programmer</a></li>
     <li><a href = "https://www.lifewire.com/black-hat-hacker-a-white-hat-hacker-4061415"target="_blank" >Black hat vs. White hat hacking</a></li>
 </ul>
 
-
-
-
-</div>
 
 </body>
 </html>
