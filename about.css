@@ -1,0 +1,106 @@
+body {
+    background-color:black;
+}
+h1 {
+    color:#0f0;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+}
+h4 {
+  color:#0f0;
+  text-align: center;
+  font-size:40px;
+  font-family: 'Courier New', Courier, monospace;
+}
+p{
+    
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    text-indent: 2em;
+    line-height: 2em;
+    font-size: 30px;
+    color:#0f0;
+    }
+.vim-caret {
+    -webkit-animation: vimCaret 1s linear infinite;
+    -o-animation: vimCaret 1s linear infinite;
+    animation: vimCaret 1s linear infinite; }
+  
+  @-webkit-keyframes vimCaret {
+    0% {
+      background-color: transparent; }
+    49% {
+      background-color: transparent; }
+    50% {
+      background-color: rgba(13, 233, 13, 0.2); }
+    100% {
+      background-color: rgba(255, 255, 255, 0.2); } }
+  
+  @-o-keyframes vimCaret {
+    0% {
+      background-color: transparent; }
+    49% {
+      background-color: transparent; }
+    50% {
+      background-color: rgba(255, 255, 255, 0.2); }
+    100% {
+      background-color: rgba(255, 255, 255, 0.2); } }
+  
+  @keyframes vimCaret {
+    0% {
+      background-color: transparent; }
+    49% {
+      background-color: transparent; }
+    50% {
+      background-color: rgba(255, 255, 255, 0.2); }
+    100% {
+      background-color: rgba(255, 255, 255, 0.2); } }
+
+      img {
+        float: left;
+        width:400; 
+        height:333;
+    
+    }
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
+
+   
+    
+ 
+    li{
+      color: #0f0;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 15pt;
+      list-style-type: lower-roman;
+      line-height: 1em;
+      margin-left: 3em;
+    }
+
+    h5 {
+        text-align: center;
+        color: #0bc;
+        font-size: 20px;
+    }
+
+    h6 {
+        text-align: center;
+        color: #0F0;
+        font-size: 30px;
+    }
+
+    a {
+        color: #0bc;
+        font-size: 20px;
+    }
+    #footer { 
+     display: block;
+     
+     bottom:0;
+     position: absolute;
+     top: 20px;
+     right: 20px;
+     
+     padding: 10px;
+     
+  }
