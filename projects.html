@@ -9,30 +9,86 @@
 </head>
 
 <body>
-        <div class="topnav" id="myTopnav">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="Resume.html">Resume</a>
-              
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                  <i class="fa fa-bars"></i>
-                </a>
-              </div>
-              
-              
-              
-              <script>
-              function myFunction() {
-                  var x = document.getElementById("myTopnav");
-                  if (x.className === "topnav") {
-                      x.className += " responsive";
-                  } else {
-                      x.className = "topnav";
-                  }
-              }
-              </script>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="Resume.html">Resume</a>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
     <div class="container">
         <div class="grid">
+            <div class="cell">
+                <img src="IMG_4186.jpeg" class="responsive-image" style height="490px;">
+                <p>One feature I enjoy about my car is the automatic windshield wipers when rain is detected. I somewhat replicated that
+                    using a water sensor and servo motor. When the sensor is immersed into the water, the servo motor gets activated. The motor will 
+                    continue to run until the water is not detected. The motor stops immediately once the sensor is completely dry. The water sensor I have
+                    is very sensitive to water, so even a droplet of water on the sensor will kick off the servo.
+                    <br><br><strong>The parts I used were:</strong>
+                    Arduino Uno, jumper wires, servo motor, & a water sensor. 
+                    <br>12/18
+                </p>
+            </div>
+            <div class="cell">
+                    <video class="responsive-image" width="367.98px" height="490px" controls>
+                        <source src="IMG_4174.mov">
+                        Your browser doesn't support the video tag.
+                    </video>
+                    <p>
+                        Water Sensor & Servo (windshield wiper replication)
+                        <br>This was really hard to record with one hand & dip and dry off the sensor with the other so bear with me.
+                    </p>
+                </div>
+            <div class="cell">
+                <img src="IMG_4187.jpeg" class="responsive-image" style height="490px;">
+                <p>Not my usual Arduino projects, this one was inspired by a friend to try out. It is not exactly a
+                    flyable drone but, more of a prototype model drone.
+                    I found this project to be very challenging considering I haven't worked much with DC motors, and I
+                    had to solder and build the frame myself. My soldering skills are terribly weak so
+                    I would say I spent the majority of my time on this project teaching myself to solder and re-doing
+                    it everytime I messed it up (happened often).
+                    I used a table saw to make the popsicle stick frame. Also, had never used a table saw before so
+                    that was another hurdle. I messed up the cuts about
+                    75 times until I finally got them somewhat equivalent, then hot glued it all together. The wiring
+                    part was probably the easiest part for me thanks to YouTube tutorials.
+                    The two yellow propellers (DC motors) are wired up together and soldered down to a switch and one
+                    set of AA batteries. The remaining two motors are wired the same way using
+                    another switch and battery pack. Future improvements to this project would be definetley a cleaner
+                    frame build, reducing the amount of switches to just 1, and less
+                    batteries for a lighter copter. I would also like to add on a transmitter and reciever to the
+                    circuit to control the motors.
+                    <br><br><strong>The parts I used were:</strong>
+                    4 DC Motors, plastic propellers, popsicle sticks, 2 switches, 4 AA batteries.
+                    <br>11/18
+                </p>
+            </div>
+
+            <div class="cell">
+                <video class="responsive-image" width="367.98px" height="490px" controls>
+                    <source src="IMG_4191.mov">
+                    Your browser doesn't support the video tag.
+                </video>
+                <p>
+                    Drone prototype video.
+                    <br>(Sorry for the obnoxious sound at the end, one of the propellers was hitting a wire. #oops.)
+                </p>
+            </div>
             <div class="cell">
                 <img src="IMG_3055.jpeg" class="responsive-image" style height="490px;">
                 <p>Super fun photoresistor project. A photoresistor is a light-controlled variable resistor. The
@@ -45,6 +101,7 @@
                     <br>10/18
                 </p>
             </div>
+
 
 
             <div class="cell">
@@ -187,4 +244,5 @@
         </div>
     </div>
 </body>
+
 </html>
